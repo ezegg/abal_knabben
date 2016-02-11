@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -22,10 +23,11 @@
 
 <!-- Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/css-plugin-collections.css" rel="stylesheet"/>
-<!-- CSS | menuzord megamenu -->
-<link href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 
 <!-- Revolution Slider -->
 <link  href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
@@ -34,6 +36,10 @@
 
 <!-- CSS | Main style file -->
 <link href="css/main-style.css" rel="stylesheet" type="text/css">
+<!-- CSS | Theme Color -->
+<link href="css/colors/theme-skin-orange.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="css/preloader.css" rel="stylesheet" type="text/css">
 <!-- CSS | Custom Margin Padding Collection -->
 <link href="css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
 <!-- CSS | Responsive media queries -->
@@ -53,60 +59,21 @@
   <!-- preloader -->
   <div id="preloader">
     <div id="spinner">
-      <div class="cssload-triangles">
-        <div class="cssload-tri cssload-invert"></div>
-        <div class="cssload-tri cssload-invert"></div>
-        <div class="cssload-tri"></div>
-        <div class="cssload-tri cssload-invert"></div>
-        <div class="cssload-tri cssload-invert"></div>
-        <div class="cssload-tri"></div>
-        <div class="cssload-tri cssload-invert"></div>
-        <div class="cssload-tri"></div>
-        <div class="cssload-tri cssload-invert"></div>
-      </div>
+      <div class="fadeout-bubble"></div>
     </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>
 
   <!-- Header -->
   <header class="header">
-    <div class="header-top bg-solid-color sm-text-center" data-bg-color="#F55E45">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <ul class="list-inline sm-text-center text-left mt-5">
-              <li>
-                <a class="text-white" href="#">FAQ</a>
-              </li>
-              <li class="text-white">|</li>
-              <li>
-                <a class="text-white" href="#">Help Desk</a>
-              </li>
-              <li class="text-white">|</li>
-              <li>
-                <a class="text-white" href="#">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="social-icons small flat m-0 sm-text-center text-right">
-              <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header-nav">
-      <div class="header-nav-wrapper navbar-scrolltofixed" data-bg-color="#fff">
+    <div class="header-nav navbar-fixed-top header-dark navbar-white navbar-transparent navbar-sticky-animated animated-active">
+      <div class="header-nav-wrapper">
         <div class="container">
           <nav>
             <div id="menuzord-right" class="menuzord red">
-              <a class="menuzord-brand" href="javascript:void(0)"><img src="http://placehold.it/164x35" alt=""></a>
+              <a class="menuzord-brand" href="javascript:void(0)"><img src="images/logo-wide.png" alt=""></a>
               <ul class="menuzord-menu">
-                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#practice">Practice Areas</a></li>
                 <li><a href="#attorney">Attorneys</a></li>
@@ -123,21 +90,373 @@
   <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: home -->
-    <section id="home" class="divider parallax" data-bg-img="http://placehold.it/1920x1280">
-      <div class="maximage-slider">
-        <div id="maximage">
-          <img src="images/img1.jpg" alt=""/>
-          <img src="images/img2.jpg" alt=""/>
-          <img src="images/img3.jpg" alt=""/>
+    <section id="home" class="divider no-bg">
+      <div class="container-fluid p-0">
+        <div id="revolution-slider-fullscreen_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="concept1" style="background-color:#000000;padding:0px;">
+          <!-- START REVOLUTION SLIDER 5.1.1RC fullscreen mode -->
+          <div id="revolution-slider-fullscreen" class="rev_slider fullscreenbanner" style="display:none; height: 137px;" data-version="5.1.1RC">
+            <ul>
+
+              <!-- SLIDE 1 -->
+              <li data-index="rs-1" data-transition="random" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-thumb="images/img1"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/img1.jpg"  alt=""  data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-black font-Playfair"
+                  id="rs-1-layer-1"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-40']"
+                  data-fontsize="['52']"
+                  data-lineheight="['80']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:500;">Experience.Advice.Success
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-center text-white font-raleway"
+                  id="rs-1-layer-2"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['30']"
+                  data-fontsize="['16']"
+                  data-lineheight="['24']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">We Alawys Provide you awesome theme With high quality design! <br>Your will be very happy to get this theme.
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption"
+                  id="rs-1-layer-3"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['90']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1700"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-theme-colored" href="#">Read more</a>
+                </div>
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-index="rs-2" data-transition="random" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-thumb="images/bg/bg8.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/img2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-black font-raleway"
+                  id="rs-2-layer-1"
+
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-75']"
+                  data-fontsize="['70']"
+                  data-lineheight="['90']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:500;">We Have
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-theme-colored font-raleway"
+                  id="rs-2-layer-2"
+
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['0']"
+                  data-fontsize="['56']"
+                  data-lineheight="['80']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1200"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600; letter-spacing:1px;">Qualified Attorneys
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-black font-raleway"
+                  id="rs-2-layer-3"
+
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['70']"
+                  data-fontsize="['16']"
+                  data-lineheight="['24']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">We Alawys Provide you awesome theme With high quality design! <br>Your will be very happy to get this theme.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption"
+                  id="rs-2-layer-4"
+
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['130']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-theme-colored pl-20 pr-20" href="#">Read more</a>
+                </div>
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-index="rs-3" data-transition="random" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-thumb="images/bg/bg9.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/img3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-black font-raleway"
+                  id="rs-3-layer-1"
+
+                  data-x="['left']"
+                  data-hoffset="['460']"
+                  data-y="['middle']"
+                  data-voffset="['-75']"
+                  data-fontsize="['70']"
+                  data-lineheight="['90']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:500;">We Have
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-theme-colored font-raleway"
+                  id="rs-3-layer-2"
+
+                  data-x="['left']"
+                  data-hoffset="['460']"
+                  data-y="['middle']"
+                  data-voffset="['0']"
+                  data-fontsize="['56']"
+                  data-lineheight="['80']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1200"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600; letter-spacing:1px;">Qualified Attorneys
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-black font-raleway"
+                  id="rs-3-layer-3"
+
+                  data-x="['left']"
+                  data-hoffset="['460']"
+                  data-y="['middle']"
+                  data-voffset="['70']"
+                  data-fontsize="['16']"
+                  data-lineheight="['24']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;">We Alawys Provide you awesome theme With high quality design! <br>Your will be very happy to get this theme.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption"
+                  id="rs-3-layer-4"
+
+                  data-x="['left']"
+                  data-hoffset="['460']"
+                  data-y="['middle']"
+                  data-voffset="['130']"
+
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-theme-colored pl-20 pr-20" href="#">Read more</a>
+                </div>
+              </li>
+            </ul>
+            <div class="tp-bannertimer tp-top" style="height: 7px; background-color: rgba(0, 0, 0, 0.1);"></div>
+          </div>
         </div>
-        <div class="fullscreen-controls"> <a class="img-prev"><i class="pe-7s-angle-left"></i></a> <a class="img-next"><i class="pe-7s-angle-right"></i></a> </div>
       </div>
-      <div class="container mt-200 mb-200 pt-200 pb-200">
-        <div class="setion-bottom-absolute-div layer-overlay overlay-white-light">
-          <div class="row">
-            <div class="col-md-12 text-center pt-30 pb-30">
-              <h1 class="text-black text-uppercase font-72">We Are <span class="text-red">MR.LAW</span></h1>
-              <h4 class="text-gray font-weight-400">Your personal legal advisor offering collaborative approach</h4>
+    </section>
+
+    <!-- Section: features -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 maxwidth500">
+            <div class="box-hover-effect effect1 text-left mb-md-30">
+              <div class="thumb">
+                <img class="img-responsive img-fullwidth" src="images/about/about1.jpg" alt="featured project"  width="476">
+              </div>
+              <div class="icon-box left media mb-0 mt-0 p-20" data-bg-color="#f1f1f1"><a href="#" class="media-left pull-left mr-15 mt-5"><i class="fa fa-phone-square text-theme-colored font-30"></i></a>
+                <div class="media-body">
+                  <h5 class="media-heading text-black text-uppercase">Case Investigation</h5>
+                  <p class="lineheight-20">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 maxwidth500">
+            <div class="box-hover-effect effect1 text-left mb-md-30">
+              <div class="thumb">
+                <img class="img-responsive img-fullwidth" src="images/about/about2.jpg" alt="">
+              </div>
+              <div class="icon-box left media mb-0 mt-0 p-20" data-bg-color="#f1f1f1"> <a href="#" class="media-left pull-left mr-15 mt-5"> <i class="fa fa-gavel text-theme-colored font-30"></i></a>
+                <div class="media-body">
+                  <h5 class="media-heading text-black text-uppercase">Cases Fighting</h5>
+                  <p class="lineheight-20">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 maxwidth500">
+            <div class="box-hover-effect effect1 text-left mb-md-30">
+              <div class="thumb">
+                <img class="img-responsive img-fullwidth" src="images/about/about3.jpg" alt="">
+              </div>
+              <div class="icon-box left media mb-0 mt-0 p-20" data-bg-color="#f1f1f1"> <a href="#" class="media-left pull-left mr-15 mt-5"> <i class="fa fa-search text-theme-colored font-30"></i></a>
+                <div class="media-body">
+                  <h5 class="media-heading text-black text-uppercase">Legal Analysis</h5>
+                  <p class="lineheight-20">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 maxwidth500">
+            <div class="box-hover-effect effect1 text-left mb-md-30">
+              <div class="thumb">
+                <img class="img-responsive img-fullwidth" src="images/about/about4.jpg" alt="">
+              </div>
+              <div class="icon-box left media mb-0 mt-0 p-20" data-bg-color="#f1f1f1"> <a href="#" class="media-left pull-left mr-15 mt-5"> <i class="fa fa-life-ring text-theme-colored font-30"></i></a>
+                <div class="media-body">
+                  <h5 class="media-heading text-black text-uppercase">Legal Help</h5>
+                  <p class="lineheight-20">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -145,71 +464,64 @@
     </section>
 
     <!-- Section: About -->
-    <section id="about" class="bg-no-repeat bg-img-cover">
-      <div class="container pb-0">
+    <section>
+      <div class="container pt-0">
         <div class="row">
-          <div class="col-md-12 col-lg-7 col-lg-offset-1">
-            <img class="mt-50 img-fullwidth" src="http://placehold.it/889x655" alt="">
-          </div>
-          <div class="col-md-12 col-lg-4 p-20">
-            <div class="p-30" data-bg-color="#f1f1f1">
-              <h3 class="text-red text-uppercase">About Us</h3>
-              <div class="line-bottom mb-20"></div>
-              <p class="mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus expedita dolor corporis illum assumenda, consequatur ut, suscipit perspiciatis possimus consectetur.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus expedita dolor corporis illum assumenda, consequatur ut, suscipit perspiciatis possimus consectetur.</p>
-              <a class="btn btn-colored pl-20 pr-20" href="#">Read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Services -->
-    <section id="service" class="text-center" data-bg-color="#fff">
-      <div class="container pb-0">
-        <div class="section-title mb-60 icon-bg text-center">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Our Services</h2>
-              <p>we are professional</p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="row multi-row-clearfix mt-120">
-            <div class="col-sm-6 col-md-3 mb-sm-90 mb-md-30">
-              <div class="icon-box services-style1 pt-90 pb-30" data-bg-color="#f5f5f5">
-                <a href="#"></a>
-                <div class="pl-10 pr-10">
-                  <h4 class="heading pt-0">Case Investigation</h4>
-                  <p>Our experienced lawyers offer great trial preparation.</p>
+          <div class="col-md-7">
+            <h3 class="mt-0">About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptatibus neque, assumenda maxime. Eaque libero unde corrupti deleniti maxime ratione doloremque suscipit perferendis aperiam labore debitis atque odit neque, possimus, aspernatur dicta nobis recusandae numquam provident porro, quam suscipit quibusdam. Commodi eum, optio quo.</p>
+            <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odio molestiae laboriosam, inciduntvolupta tibus fugit, adipisci tenetur necessitatibus officia nesciunt eveniet, culpa consequatur reiciendis quaerat. adipisci tenetur necessitatibus officia nesciunt eveniet, culpa consequatur reiciendis quaerat.</p>
+            <h3>Our Skills</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et optio cum velit autem dolor reprehenderit saepe assumenda eos, qui. Voluptatem eveniet, illum dolor nemo? Velit maiores quaerat a non dolor praesentium, corporis optio ullam, voluptatem fuga consequatur sed cupiditate quam!</p> <br>
+            <div class="row">
+              <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="icon-box box-border text-center mb-0 mb-sm-20 p-15">
+                  <i class="pe-7s-users text-theme-colored"></i>
+                  <h6>Deal Support</h6>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="icon-box box-border text-center mb-0 mb-sm-20 p-15">
+                  <i class="pe-7s-headphones text-theme-colored"></i>
+                  <h6 class="">Online Consulting</h6>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="icon-box box-border text-center mb-0 mb-sm-20 p-15">
+                  <i class="pe-7s-copy-file text-theme-colored"></i>
+                  <h6 class="">Document preparation</h6>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-sm-90 mb-md-30">
-              <div class="icon-box services-style1 pt-90 pb-30" data-bg-color="#f5f5f5">
-                <a class="service-icon_genius" href="#"></a>
-                <div class="pl-10 pr-10">
-                  <h4 class="heading pt-0">Cases Fighting</h4>
-                  <p>Our experienced lawyers offer great trial preparation.</p>
+          </div>
+          <div class="col-md-5">
+            <div class="thumb">
+              <img class="img-fullwidth" src="images/blog-landing/blog-1-col-img4.jpg" alt="">
+            </div>
+            <h4 class="mt-20">Why Choose Us?</h4>
+            <div class="panel-group accordion style2 mb-0 mt-20" id="accordion2">
+              <div class="panel">
+                <div class="panel-title"> <a href="#accordion21" data-toggle="collapse" data-parent="#accordion2" class="active"> <span class="open-sub"></span> Best Case Strategy </a> </div>
+                <div class="panel-collapse collapse in" id="accordion21">
+                  <div class="panel-content">
+                    <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 mb-sm-90 mb-md-30">
-              <div class="icon-box services-style1 pt-90 pb-30" data-bg-color="#f5f5f5">
-                <a class="service-icon_pencil" href="#"></a>
-                <div class="pl-10 pr-10">
-                  <h4 class="heading pt-0">Legal Analysis</h4>
-                  <p>Our experienced lawyers offer great trial preparation.</p>
+              <div class="panel">
+                <div class="panel-title"> <a href="#accordion22" data-toggle="collapse" data-parent="#accordion2"> <span class="open-sub"></span> Review your Case Documents </a> </div>
+                <div class="panel-collapse collapse" id="accordion22">
+                  <div class="panel-content">
+                    <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 mb-sm-90 mb-md-30">
-              <div class="icon-box services-style1 pt-90 pb-30" data-bg-color="#f5f5f5">
-                <a class="service-icon_question" href="#"></a>
-                <div class="pl-10 pr-10">
-                  <h4 class="heading pt-0">Legal Help</h4>
-                  <p>Our experienced lawyers offer great trial preparation.</p>
+              <div class="panel">
+                <div class="panel-title"> <a href="#accordion23" data-toggle="collapse" data-parent="#accordion2"> <span class="open-sub"></span> Fight for Justice </a> </div>
+                <div class="panel-collapse collapse" id="accordion23">
+                  <div class="panel-content">
+                    <p>Ut cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,11 +531,12 @@
     </section>
 
     <!-- Section: Practices Area -->
-    <section id="practice" class="divider parallax layer-overlay overlay-white" data-bg-img="http://placehold.it/1920x1280">
-      <div class="container">
-        <div class="section-title icon-bg text-center">
+    <section id="practice" data-bg-color="#f8f8f8">
+      <div class="container pb-30">
+        <div class="section-title title-border icon-bg">
           <div class="row">
             <div class="col-md-12">
+              <h5 class="mt-0 mb-0 text-uppercase">Rehearses</h5>
               <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Practices Area</h2>
               <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
                 amet lectus tincidunt condimentum.</p>
@@ -232,82 +545,170 @@
         </div>
         <div class="section-content">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="attorney-carousel maxwidth400 mt-10">
-                <div class="box-hover-effect effect4 bg-white-light-gray p-10 text-left">
-                  <div class="thumb">
-                    <img class="img-responsive img-fullwidth" src="http://placehold.it/360x205" alt="featured project"  width="476">
-                    <div class="overlay white">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="overlay-details text-center">
-                            <h4 class="text-red mt-0">Family law</h4>
-                            <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
-                            <a class="btn btn-colored btn-red btn-xs" href="#">Read more</a>
-                          </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/1.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Family law</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="details">
-                      <h5 class="text-black">Family law</h5>
                     </div>
                   </div>
-                </div>
-                <div class="box-hover-effect effect4 bg-white-light-gray p-10 text-left">
-                  <div class="thumb">
-                    <img class="img-responsive img-fullwidth" src="http://placehold.it/360x205" alt="featured project"  width="476">
-                    <div class="overlay white">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="overlay-details text-center">
-                            <h4 class="text-red mt-0">Accident Injuries</h4>
-                            <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
-                            <a class="btn btn-colored btn-red btn-xs" href="#">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="details">
-                      <h5 class="text-black">Accident Injuries</h5>
-                    </div>
+                  <div class="details">
+                    <h5>Family law</h5>
                   </div>
                 </div>
-                <div class="box-hover-effect effect4 bg-white-light-gray p-10 text-left">
-                  <div class="thumb">
-                    <img class="img-responsive img-fullwidth" src="http://placehold.it/360x205" alt="featured project"  width="476">
-                    <div class="overlay white">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="overlay-details text-center">
-                            <h4 class="text-red mt-0">Business Taxation</h4>
-                            <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
-                            <a class="btn btn-colored btn-red btn-xs" href="#">Read more</a>
-                          </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/2.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Accident Injuries</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="details">
-                      <h5 class="text-black">Business Taxation</h5>
                     </div>
                   </div>
+                  <div class="details">
+                    <h5>Accident Injuries</h5>
+                  </div>
                 </div>
-                <div class="box-hover-effect effect4 bg-white-light-gray p-10 text-left">
-                  <div class="thumb">
-                    <img class="img-responsive img-fullwidth" src="http://placehold.it/360x205" alt="featured project"  width="476">
-                    <div class="overlay white">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="overlay-details text-center">
-                            <h4 class="text-red mt-0">Transporation Law</h4>
-                            <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
-                            <a class="btn btn-colored btn-red btn-xs" href="#">Read more</a>
-                          </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/3.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Business Taxation</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
                         </div>
                       </div>
                     </div>
-                    <div class="details">
-                      <h5 class="text-black">Transporation Law</h5>
+                  </div>
+                  <div class="details">
+                    <h5>Business Taxation</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/4.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Transporation Law</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="details">
+                    <h5>Transporation Law</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/5.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Construction Accidents</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h5>Construction Accidents</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/6.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Trade & Finance law</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h5>Trade & Finance law</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/7.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Education Law</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h5>Education Law</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+              <div class="box-hover-effect effect4 bg-white-gray p-10 text-left maxwidth400">
+                <div class="thumb">
+                  <img class="img-responsive img-fullwidth" src="images/practice/8.jpg" alt="featured project"  width="476">
+                  <div class="overlay white">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <div class="overlay-details text-center">
+                          <h4 class="text-theme-colored mt-0">Civil Litigation</h4>
+                          <p class="pl-20 pr-20">Our experienced lawyers offer great trial preparation.</p>
+                          <a class="btn btn-colored btn-theme-colored btn-xs" href="#">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h5>Civil Litigation</h5>
                   </div>
                 </div>
               </div>
@@ -319,87 +720,115 @@
 
     <!-- Section: Attorneys -->
     <section id="attorney">
-      <div class="container">
-        <div class="section-title text-center icon-bg">
+      <div class="container pb-30">
+        <div class="section-title title-border title-right icon-bg">
           <div class="row">
             <div class="col-md-12">
+              <h5 class="mt-0 mb-0 text-uppercase">Our</h5>
               <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>Expert Attorneys</h2>
-              <p>we are professional</p>
+              <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
+                amet lectus tincidunt condimentum.</p>
             </div>
           </div>
         </div>
         <div class="section-content">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="attorney-carousel maxwidth400 mt-10">
-                <div class="attorney item box-hover-effect effect1">
-                  <div class="thumb"><img class="img-fullwidth" src="http://placehold.it/262x340" alt=""></div>
-                  <div class="content text-left bg-white-light-gray border-1px p-15">
-                    <h4 class="author text-red mb-0 mt-0">Alex Jacobson</h4>
-                    <h6 class="title text-dark mt-0">Founder</h6>
-                    <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    <ul class="contact-area mt-20">
-                      <li><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
-                      <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
-                    </ul>
-                    <ul class="social-icons small mt-30 mb-10">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
+            <div class="col-sm-12 col-md-6">
+              <div class="attorney box-hover-effect effect1 maxwidth400 mb-30" data-bg-color="#fafafa">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 xs-text-center">
+                    <div class="thumb"><img class="img-fullwidth" src="images/team/team1.jpg" alt=""></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 xs-text-center pt-20">
+                    <div class="content">
+                      <h4 class="author text-theme-colored mb-0">Alex Jacobson</h4>
+                      <h6 class="title text-dark mt-0 mb-10">Attorney</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque.</p>
+                      <ul class="contact-area mt-20">
+                        <li class="mb-10"><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
+                      </ul>
+                      <ul class="social-icons icon-theme-colored small mt-30">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="attorney item box-hover-effect effect1">
-                  <div class="thumb"><img src="http://placehold.it/262x340" alt=""></div>
-                  <div class="content text-left bg-white-light-gray border-1px p-15">
-                    <h4 class="author text-red mb-0 mt-0">John Doe</h4>
-                    <h6 class="title text-dark mt-0">Partner</h6>
-                    <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    <ul class="contact-area mt-20">
-                      <li><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
-                      <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
-                    </ul>
-                    <ul class="social-icons small mt-30 mb-10">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="attorney box-hover-effect effect1 maxwidth400 mb-30" data-bg-color="#fafafa">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 xs-text-center pt-20 pl-30">
+                    <div class="content">
+                      <h4 class="author text-theme-colored mb-0">Alex Jacobson</h4>
+                      <h6 class="title text-dark mt-0 mb-10">Attorney</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque.</p>
+                      <ul class="contact-area mt-20">
+                        <li class="mb-10"><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
+                      </ul>
+                      <ul class="social-icons icon-theme-colored small mt-30">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 xs-text-center">
+                    <div class="thumb xs-text-center sm-text-right"><img class="img-fullwidth" src="images/team/team2.jpg" alt=""></div>
                   </div>
                 </div>
-                <div class="attorney item box-hover-effect effect1">
-                  <div class="thumb"><img src="http://placehold.it/262x340" alt=""></div>
-                  <div class="content text-left bg-white-light-gray border-1px p-15">
-                    <h4 class="author text-red mb-0 mt-0">Kiley Felicity</h4>
-                    <h6 class="title text-dark mt-0">lawyer</h6>
-                    <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    <ul class="contact-area mt-20">
-                      <li><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
-                      <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
-                    </ul>
-                    <ul class="social-icons small mt-30 mb-10">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="attorney box-hover-effect effect1 maxwidth400 mb-30" data-bg-color="#fafafa">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 xs-text-center">
+                    <div class="thumb"><img class="img-fullwidth" src="images/team/team3.jpg" alt=""></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 xs-text-center pt-20">
+                    <div class="content">
+                      <h4 class="author text-theme-colored mb-0">Alex Jacobson</h4>
+                      <h6 class="title text-dark mt-0 mb-10">Attorney</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque.</p>
+                      <ul class="contact-area mt-20">
+                        <li class="mb-10"><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
+                      </ul>
+                      <ul class="social-icons icon-theme-colored small mt-30">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="attorney item box-hover-effect effect1">
-                  <div class="thumb"><img src="http://placehold.it/262x340" alt=""></div>
-                  <div class="content text-left bg-white-light-gray border-1px p-15">
-                    <h4 class="author text-red mb-0 mt-0">JACK SMITH</h4>
-                    <h6 class="title text-dark mt-0">Lawyer</h6>
-                    <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    <ul class="contact-area mt-20">
-                      <li><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
-                      <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
-                    </ul>
-                    <ul class="social-icons small mt-30 mb-10">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="attorney box-hover-effect effect1 maxwidth400 mb-30" data-bg-color="#fafafa">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 xs-text-center pt-20 pl-30">
+                    <div class="content">
+                      <h4 class="author text-theme-colored mb-0">Alex Jacobson</h4>
+                      <h6 class="title text-dark mt-0 mb-10">Attorney</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque.</p>
+                      <ul class="contact-area mt-20">
+                        <li class="mb-10"><a href="#"><i class="pe-7s-call"></i>+1-23-345-6789</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>myemail@ymail.com</a></li>
+                      </ul>
+                      <ul class="social-icons icon-theme-colored small mt-30">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 xs-text-center">
+                    <div class="thumb xs-text-center sm-text-right"><img class="img-fullwidth" src="images/team/team4.jpg" alt=""></div>
                   </div>
                 </div>
               </div>
@@ -409,40 +838,123 @@
       </div>
     </section>
 
-    <!-- Divider: Funfact -->
-    <section class="divider parallax layer-overlay overlay-white">
+    <!-- divider: what makes us different -->
+    <section class="divider parallax layer-overlay overlay-white" data-bg-img="images/bg/bg2.jpg">
       <div class="container">
+        <div class="section-content text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="mt-0">We Fight for our clients</h3>
+              <h2>Just call at <span class="text-theme-colored">(01) 234 5678</span> for emergency service</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Appointment -->
+    <section class="bg-no-repeat bg-img-cover">
+      <div class="container pb-0">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-            <div class="funfact style-1 pb-10 pt-10 p-20 bg-white">
-              <i class="pe-7s-smile text-black-light mt-10 font-48 pull-right" data-text-color="#ccc"></i>
-              <h2 class="animate-number text-red mt-0 font-48" data-value="754" data-animation-duration="2000">0</h2>
-              <div class="clearfix"></div>
-              <h4 class="text-left text-uppercase font-14" data-text-color="rgba(0,0,0,0.3)">Happy Clients</h4>
+          <div class="col-md-7 col-md-offset-1">
+            <img class="mt-10" src="images/about/1.jpg" alt="">
+          </div>
+          <div class="col-md-4 p-20">
+            <div class="p-30 pt-20" data-bg-color="#f1f1f1">
+              <h3 class="text-theme-colored text-uppercase font-22 mt-0">Make an Appointment</h3>
+              <div class="line-bottom mb-20"></div>
+              <form id="contact-form" class="contact-form-transparent contact-form-line">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                      <input type="text" placeholder="Enter Name" id="contact_name2" name="contact_name" required="" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                      <input type="text" placeholder="Enter Email" id="contact_email2" name="contact_email" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                      <input type="text" placeholder="Enter Subject" id="contact_subject2" name="contact_subject" class="form-control" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-10">
+                  <textarea rows="5" placeholder="Enter Message" id="contact_message2" name="contact_message" required class="form-control"></textarea>
+                </div>
+                <div class="form-group mb-0 mt-20">
+                  <button data-loading-text="Please wait..." class="btn btn-colored" type="submit">SEND TO LAWYER</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-            <div class="funfact style-1 pb-10 pt-10 p-20 bg-white">
-              <i class="pe-7s-hammer text-black-light mt-10 font-48 pull-right" data-text-color="#ccc"></i>
-              <h2 class="animate-number text-red mt-0 font-48" data-value="125" data-animation-duration="2500">0</h2>
-              <div class="clearfix"></div>
-              <h4 class="text-left text-uppercase font-14" data-text-color="rgba(0,0,0,0.3)">Cases Success</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: testimonials and clients -->
+    <section class="divider parallax layer-overlay overlay-white-deep" data-bg-img="images/bg/bg5.jpg">
+      <div class="container pb-50">
+        <div class="row">
+          <div class="col-sm-5 mb-30">
+            <div class="testimonial-carousel boxed">
+              <div class="item text-left xs-text-center">
+                <div class="content pt-10">
+                  <p class="font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque tincidunt.</p>
+                  <div class="thumb"><img width="75" class="img-circle" alt="" src="images/testimonials/3.jpg"></div>
+                  <h5 class="author text-theme-colored mt-20 mb-0">Catherine Grace</h5>
+                  <h6 class="title text-gray mt-0">Designer</h6>
+                </div>
+              </div>
+              <div class="item text-left xs-text-center">
+                <div class="content pt-10">
+                  <p class="font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque tincidunt.</p>
+                  <div class="thumb"><img width="75" class="img-circle" alt="" src="images/testimonials/3.jpg"></div>
+                  <h5 class="author text-theme-colored mt-20 mb-0">Catherine Grace</h5>
+                  <h6 class="title text-gray mt-0">Designer</h6>
+                </div>
+              </div>
+              <div class="item text-left xs-text-center">
+                <div class="content pt-10">
+                  <p class="font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat turpis nec leo pellentesque tincidunt.</p>
+                  <div class="thumb"><img width="75" class="img-circle" alt="" src="images/testimonials/3.jpg"></div>
+                  <h5 class="author text-theme-colored mt-20 mb-0">Catherine Grace</h5>
+                  <h6 class="title text-gray mt-0">Designer</h6>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-            <div class="funfact style-1 pb-10 pt-10 p-20 bg-white">
-              <i class="pe-7s-magic-wand text-black-light mt-10 font-48 pull-right" data-text-color="#3CAB6F"></i>
-              <h2 class="animate-number text-red mt-0 font-48" data-value="45" data-animation-duration="3000">0</h2>
-              <div class="clearfix"></div>
-              <h4 class="text-left text-uppercase font-14" data-text-color="rgba(0,0,0,0.3)">Recovered</h4>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-            <div class="funfact style-1 pb-10 pt-10 p-20 bg-white">
-              <i class="pe-7s-portfolio text-black-light mt-10 font-48 pull-right" data-text-color="#ccc"></i>
-              <h2 class="animate-number text-red mt-0 font-48" data-value="225" data-animation-duration="2500">0</h2>
-              <div class="clearfix"></div>
-              <h4 class="text-left text-uppercase font-14" data-text-color="rgba(0,0,0,0.3)">Cases Done</h4>
+          <div class="col-sm-7">
+            <div class="row equal-height">
+              <div class="col-xs-4 p-0">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/1.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0 bg-white">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/2.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/3.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0 bg-white">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/4.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/5.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0 bg-white">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/1.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/3.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0 bg-white">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/2.png"></a></div>
+              </div>
+              <div class="col-xs-4 p-0">
+                <div class="client-img"><a href="#"><img alt="" src="images/clients/4.png"></a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -451,140 +963,109 @@
 
     <!-- Section: News -->
     <section id="news">
-      <div class="container pb-30">
-        <div class="section-title text-center icon-bg mb-20">
+      <div class="container">
+        <div class="section-title title-border title-right icon-bg">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="mt-0 page-title"><i class="fa fa-legal"></i>News</h2>
+              <h6 class="mt-0 mb-0 text-uppercase">Rehearses</h6>
+              <h2 class="mt-0 page-title"><i class="fa fa-edit"></i>News</h2>
               <p>Maecenas nec efficitur felis. Nulla egestas lacus sit
                 amet lectus tincidunt condimentum.</p>
-              <a href="#" class="pull-right font-12 mt-30"><i class="fa fa-angle-double-right text-red"></i> View All Post</a>
             </div>
           </div>
         </div>
         <div class="section-content">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">Competing with Clerky</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
+          <div class="row multi-row-clearfix">
+            <div class="blog-posts">
+              <div class="col-xs-12 col-sm-12 col-md-4">
+                <article class="post clearfix box-hover-effect effect1 maxwidth600">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb"> <img class="img-responsive img-fullwidth" alt="" src="images/blog/4.jpg"> </div>
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h5 class="entry-title mt-0 pt-0"><a href="#">Bankruptcy Rights Proceedings</a></h5>
+                    <ul class="list-inline font-12">
+                      <li>by <a href="#" class="text-theme-colored">Admin |</a></li>
+                      <li><span class="text-theme-colored">Nov 13, 2015</span></li>
+                    </ul>
+                    <p class="text-left mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <ul class="list-inline like-comment pull-left font-12">
+                      <li><i class="pe-7s-comment"></i>36</li>
+                      <li><i class="pe-7s-like2"></i>125</li>
+                    </ul>
+                    <a href="#" class="pull-right text-gray font-12"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4">
+                <article class="post clearfix box-hover-effect effect1 maxwidth600">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb"> <img class="img-responsive img-fullwidth" alt="" src="images/blog/2.jpg"> </div>
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h5 class="entry-title mt-0 pt-0"><a href="#">Complex Commercial Litigation</a></h5>
+                    <ul class="list-inline font-12">
+                      <li>by <a href="#" class="text-theme-colored">Admin |</a></li>
+                      <li><span class="text-theme-colored">Oct 12, 2015</span></li>
+                    </ul>
+                    <p class="text-left mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <ul class="list-inline like-comment pull-left font-12">
+                      <li><i class="pe-7s-comment"></i>36</li>
+                      <li><i class="pe-7s-like2"></i>125</li>
+                    </ul>
+                    <a href="#" class="pull-right text-gray font-12"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4">
+                <article class="post clearfix box-hover-effect effect1 maxwidth600">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb"> <img class="img-responsive img-fullwidth" alt="" src="images/blog/5.jpg"> </div>
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h5 class="entry-title mt-0 pt-0"><a href="#">Procurement Disputes</a></h5>
+                    <ul class="list-inline font-12">
+                      <li>by <a href="#" class="text-theme-colored">Admin |</a></li>
+                      <li><span class="text-theme-colored">Sep 23, 2015</span></li>
+                    </ul>
+                    <p class="text-left mb-30 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <ul class="list-inline like-comment pull-left font-12">
+                      <li><i class="pe-7s-comment"></i>36</li>
+                      <li><i class="pe-7s-like2"></i>125</li>
+                    </ul>
+                    <a href="#" class="pull-right text-gray font-12"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">The Social Law Firm</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">What is civil law?</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">Bankruptcy Rights Proceedings</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">Complex Commercial Litigation</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-              <div class="box-hover-effect effect1 bg-white-gray p-10">
-                <div class="thumb"><img src="http://placehold.it/360x205" alt="" class="img-fullwidth"></div>
-                <h4><a href="#">Procurement Disputes</a></h4>
-                <p class="text-left mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                <ul class="list-inline like-comment pull-left font-12">
-                  <li><i class="pe-7s-comment text-red"></i>36</li>
-                  <li><i class="pe-7s-like2 text-red"></i>125</li>
-                </ul>
-                <a href="#" class="pull-right font-12"><i class="fa fa-angle-double-right text-red"></i> Read more</a>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divider: Our clients -->
-    <section class="client-logo bg-solid-color">
-      <div class="container">
-        <div class="row">
-          <div class="clients-logo carousel">
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/110x110" alt=""></a> </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Divider: Contact -->
-    <section id="contact" class="divider parallax layer-overlay layer-pattern" data-bg-img="http://placehold.it/1920x1280">
+    <section id="contact" class="divider parallax layer-overlay layer-pattern" data-bg-img="images/bg/bg2.jpg">
       <div class="container">
         <div class="row pt-30">
           <div class="col-xs-12 col-sm-12 col-md-4 text-white">
-            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-red"></i></a>
+            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
               <div class="media-body"> <strong>OUR OFFICE LOCATION</strong>
                 <p>121 King St, Melbourne VIC 3000, Australia</p>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 text-white">
-            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-red"></i></a>
+            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
               <div class="media-body"> <strong>OUR CONTACT NUMBERS</strong>
                 <p>Phone: +325 12345 65478 <br>Fax: +325 15355 66788</p>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 text-white">
-            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-red"></i></a>
+            <div class="icon-box left media p-30 mb-20 bg-dark-transparent"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
               <div class="media-body"> <strong>OUR CONTACT E-MAILS</strong>
                 <p>supporte@yourdomin.com <br>supporteus@yourdomin.com </p>
               </div>
@@ -630,9 +1111,21 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-3">
-          <div class="footer-widget"> <img alt="" src="http://placehold.it/142x85">
-            <p class="font-12 mt-20 mb-20">MrLaw is a library of corporate and business templates with predefined web elements which helps you to build your own site. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a class="btn btn-default btn-xs mt-0" href="#">Read More</a>
+          <div class="footer-widget"> <img alt="" src="images/logo-square.png">
+            <p class="font-12 mt-20 mb-10">MrLaw is a library of corporate and business templates with predefined web elements which helps you to build your own site. Lorem ipsum dolor sit amet, consectetur adipiscingyou to build elit.</p>
+            <a class="text-gray font-12" href="#"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="footer-widget">
+            <h5 class="widget-title text-white">Pages<span class="line-bottom"></span></h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Attorneys</a></li>
+              <li><a href="#">Practice Arears</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
@@ -644,37 +1137,24 @@
               <li><a href="#"><i class="fa fa-check-square-o mr-10 text-black-light"></i> Personal Injury</a></li>
               <li><a href="#"><i class="fa fa-check-square-o mr-10 text-black-light"></i> Personal Injury</a></li>
               <li><a href="#"><i class="fa fa-check-square-o mr-10 text-black-light"></i> Case Investigation</a></li>
-              <li><a href="#"><i class="fa fa-check-square-o mr-10 text-black-light"></i> Business Taxation</a></li>
             </ul>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="footer-widget">
-            <h5 class="widget-title text-white">Pages<span class="line-bottom"></span></h5>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Attorneys</a></li>
-              <li><a href="#">Practice Arears</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="footer-widget">
-            <h5 class="widget-title text-white pb-10">Quick Contact<span class="line-bottom"></span></h5>
-            <form class="footer-contact-form">
-              <div class="form-group">
-                <input type="text" placeholder="Enter Email" id="contact_email" name="contact_email" class="form-control" required="">
+            <h5 class="widget-title text-white">Latest news<span class="line-bottom"></span></h5>
+            <article class="post media-post clearfix pb-0 mb-10"> <a class="post-thumb" href="#"><img src="images/photos/1.jpg" alt=""></a>
+              <div class="post-right">
+                <a class="post-title mt-0 text-white" href="#">Bankruptcy Rights Proceedings</a>
+                <p class="mb-0">Mar 08, 2015</p>
               </div>
-              <div class="form-group">
-                <textarea rows="3" placeholder="Enter Message" id="contact_message" name="contact_message" required class="form-control"></textarea>
+            </article>
+            <article class="post media-post clearfix pb-0 mb-10"> <a class="post-thumb" href="#"><img src="images/photos/2.jpg" alt=""></a>
+              <div class="post-right">
+                <a class="post-title mt-0 text-white" href="#">Assertive and Persistent Advocacy</a>
+                <p class="mb-0">Apr 15, 2015</p>
               </div>
-              <div class="form-group">
-                <button data-loading-text="Please wait..." class="btn btn-default btn-xs text-gray mt-0" type="submit">Send Message</button>
-              </div>
-            </form>
+            </article>
           </div>
         </div>
       </div>
@@ -684,21 +1164,21 @@
             <div class="col-sm-12 col-sm-4">
               <div class="each-widget">
                 <i class="pe-7s-phone font-36 mb-10 text-white"></i>
-                <h5 class="text-red">Call Us</h5>
+                <h5 class="text-theme-colored">Call Us</h5>
                 <p class="text-white">Phone: <a href="#" class="text-white">+262 695 2601</a></p>
               </div>
             </div>
             <div class="col-sm-12 col-sm-4 mt-sm-50">
               <div class="each-widget">
                 <i class="pe-7s-map font-36 mb-10 text-white"></i>
-                <h5 class="text-red">Address</h5>
+                <h5 class="text-theme-colored">Address</h5>
                 <p class="text-white">121 King Street, Australia</p>
               </div>
             </div>
             <div class="col-sm-12 col-sm-4 mt-sm-50">
               <div class="each-widget">
                 <i class="pe-7s-mail font-36 mb-10 text-white"></i>
-                <h5 class="text-red">Email</h5>
+                <h5 class="text-theme-colored">Email</h5>
                 <p><a href="#" class="text-white">you@yourdomain.com</a></p>
               </div>
             </div>
@@ -725,11 +1205,13 @@
       </div>
     </div>
   </footer>
-  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a> </div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
 <!-- end wrapper -->
 
 <!-- jQuery scripts -->
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- Revolution Slider -->
 <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
@@ -739,7 +1221,74 @@
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <!-- JS | Necessary jQuery Collection for this theme -->
 <script src="js/jquery-plugin-collection.js"></script>
+<!-- JS | Calendar Event Data -->
+<script src="js/calendar-events-data.js"></script>
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+      (Load Extensions only on Local File Systems !
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+<!-- Color Switcher Starts | Only for demo purpose and not included in main file -->
+<link href="color-switcher/css/color-switcher.css" rel="stylesheet" type="text/css">
+<script src="color-switcher/js/color-switcher.js"></script>
+<div id="custumize-style">
+  <a href="#" class="switcher open"> <span class="icon-switcher"><i class="fa fa-sliders"></i></span></a>
+  <div>
+    <h3 class="color-option-title">Theme Skins:</h3>
+    <ul class="colors-style" id="switcher-theme-custom-color">
+      <li><a title="green" href="#" class="theme-skin-green"></a></li>
+      <li><a title="blue" href="#" class="theme-skin-blue"></a></li>
+      <li><a title="red" href="#" class="theme-skin-red"></a></li>
+      <li><a title="blue-gray" href="#" class="theme-skin-blue-gray"></a></li>
+      <li><a title="brown" href="#" class="theme-skin-brown"></a></li>
+      <li><a title="gray" href="#" class="theme-skin-gray"></a></li>
+      <li><a title="lemon" href="#" class="theme-skin-lemon"></a></li>
+      <li><a title="orange" href="#" class="theme-skin-orange"></a></li>
+      <li><a title="yellow" href="#" class="theme-skin-yellow"></a></li>
+    </ul>
+    <h3 class="color-option-title">Menu Skins:</h3>
+    <ul class="colors-style" id="switcher-menu-custom-color">
+      <li><a title="default" href="#" class="menu-skin-default"></a></li>
+      <li><a title="blue" href="#" class="menu-skin-blue"></a></li>
+      <li><a title="green" href="#" class="menu-skin-green"></a></li>
+      <li><a title="red" href="#" class="menu-skin-red"></a></li>
+      <li><a title="orange" href="#" class="menu-skin-orange"></a></li>
+      <li><a title="yellow" href="#" class="menu-skin-yellow"></a></li>
+      <li><a title="purple" href="#" class="menu-skin-purple"></a></li>
+      <li><a title="pink" href="#" class="menu-skin-pink"></a></li>
+    </ul>
+    <h3 class="color-option-title">Menu Style:</h3>
+    <select name="switcher-menu-style" id="switcher-menu-style">
+      <option value="default">Default</option>
+      <option value="menuzord-border-top">Border Top</option>
+      <option value="menuzord-border-bottom">Border Bottom</option>
+      <option value="menuzord-border-boxed">Border Boxed</option>
+      <option value="menuzord-border-left">Border Left</option>
+      <option value="menuzord-border-top-bottom">Border Top Bottom</option>
+      <option value="menuzord-bottom-trace">Bottom Trace</option>
+      <option value="menuzord-boxed">Boxed</option>
+      <option value="menuzord-colored">Colored</option>
+      <option value="menuzord-dark">Dark</option>
+      <option value="menuzord-gradient">Gradient</option>
+      <option value="menuzord-rounded-boxed">Rounded Boxed</option>
+      <option value="menuzord-shadow">Shadow</option>
+      <option value="menuzord-strip">Strip</option>
+      <option value="menuzord-subcolored">Sub-Colored</option>
+      <option value="menuzord-top-bottom-boxed-border">Top Bottom Boxed Border</option>
+    </select>
+  </div>
+</div>
+<!-- Color Switcher Ends-->
 </body>
-</htmla>
+</html>
