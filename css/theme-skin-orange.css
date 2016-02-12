@@ -1,0 +1,217 @@
+/* --------------------------------------
+@Author: ThemeMascot
+@URL: http://themeforest.net/user/ThemeMascot
+
+COLOR : Orange
+COLOR CODE: #F55E45
+----------------------------------------- */
+
+.bg-theme-colored {
+	background-color: #f55e45 !important;
+}
+/* background-color-transparent */
+.bg-theme-colored-transparent {
+	background-color: rgba(245,94,69,0.7) !important;
+}
+/* Layeroverlay */
+.layer-overlay.overlay-red::before {
+	background-color: rgba(245,94,69,0.9);
+}
+/* background-color */
+.btn-colored.btn-theme-colored {
+	background: #003974!important;
+}
+.btn-colored.btn-theme-colored:hover {
+	background: #003974 !important;
+}
+.title-icon::before {
+	background: #f55e45 none repeat scroll 0 0;
+}
+.title-icon::after {
+	background: #f55e45 none repeat scroll 0 0;
+}
+.panel-title a.active::after {
+    background: #003974;
+}
+.tab-slider .nav.nav-pills a:hover,.tab-slider .nav.nav-pills a.active {
+	background: #F55E45;
+}
+.custom-nav-tabs > li > a:hover {
+	background: #F55E45;
+}
+.testimonial .item::after {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.testimonial-carousel.boxed.owl-theme .owl-dots .owl-dot.active span,
+.testimonial-carousel.boxed.owl-theme .owl-dots .owl-dot:hover span {
+	background: #f55e45;
+}
+.post .entry-meta li {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.blog-posts.style2 .owl-controls .owl-nav > div {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.blog-posts.style2 .entry-meta {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.sidebar-widget .tags a:hover {
+	background: #F55E45;
+}
+.footer .social-icons li a i:hover {
+	background: #f55e45;
+}
+.progress-item .progress-bar {
+	background: #F55E45;
+}
+.social-icons.icon-theme-colored a i {
+	background: #F55E45;
+}
+.attorney-carousel .owl-controls .owl-nav > div {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.featured-gallery.style2 .owl-controls .owl-nav > div {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.small-title .title::after {
+	background: #F55E45 none repeat scroll 0 0;
+}
+.menuzord .menuzord-menu > li.active > a,
+.menuzord .menuzord-menu > li:hover > a,
+.menuzord .menuzord-menu ul.dropdown li:hover > a {
+	/*background: #F55E45 none repeat scroll 0 0;*/
+}
+.icon-box.box-style1.practice-style3:hover .icon-wrapper {
+	background-color: #F55E45;
+}
+.zeus .tp-bullet::after {
+	background-color: #f55e45;
+}
+/* text color */
+ul.list.angle-double-right li:before {
+	color: #F55E45;
+}
+ul.list.angle-right li:before {
+	color: #F55E45;
+}
+ul.list.check-circle li:before {
+	color: #F55E45;
+}
+.btn-default.btn-theme-colored {
+	color: #F55E45!important;
+}
+.title-icon [class^="flaticon-"]::after,
+.title-icon [class^="flaticon-"]::before {
+	color: #f55e45;
+}
+.text-theme-colored {
+	color: #003974 !important;
+}
+.menuzord-menu > li > .megamenu .megamenu-row li:hover > a,
+.menuzord-menu > li > .megamenu .megamenu-row .post a:hover {
+	color: #f55e45;
+}
+.menuzord-menu > li > .megamenu .megamenu-row li:hover > a i,
+.menuzord-menu > li > .megamenu .megamenu-row .post a:hover i {
+	color: #f55e45;
+}
+.pricing-table .table-list li i {
+	color: #F55E45;
+}
+.horizontal-tab-centered .nav-pills > li > a:hover i,
+.horizontal-tab-centered .nav-pills > li.active > a i,
+.horizontal-tab-centered .nav-pills > li.active > a:hover i,
+.horizontal-tab-centered .nav-pills > li.active > a:focus i {
+	color: #F55E45;
+}
+.testimonial-carousel.boxed .content::after {
+	color: #F55E45;
+}
+.like-comment li i {
+	color: #F55E45;
+}
+.twitter-widget .twitter-feed li::after {
+	color: #F55E45;
+}
+.footer .footer-widget ul li a:hover,
+.footer .footer-widget ul li a:hover i,
+.footer .footer-widget  a.post-title:hover {
+	color: #f55e45 !important;
+}
+.sidebar-widget .text-widget.address li i {
+	color: #F55E45;
+}
+.icon-box.box-style1.practice-style3 i {
+	color: #F55E45;
+}
+.attorney-carousel .content .contact-area i {
+	color: #F55E45;
+}
+.attorney-address li i {
+    color: #F55E45;
+}
+.icon-box.services-style1:hover .heading  {
+	color: #F55E45;
+}
+.horizontal-contact-widget .each-widget::before {
+	color: #003974;
+}
+.small-title i {
+	color: #F55E45;
+}
+/* border-color */
+.btn-default.btn-theme-colored {
+	border: 1px solid #F55E45!important;
+}
+.line-bottom:after {
+	border: 1px solid #003974;
+}
+.icon-box.icon-rounded-bordered i {
+	border: 1px solid #F55E45;
+}
+.sidebar .sidebar-widget .line-bottom:after,
+.footer .footer-widget .line-bottom:after {
+	border: 1px solid #003974;
+}
+.border-brown {
+	border-color: #F55E45;
+}
+.icon-box.box-style1.practice-style3:hover .icon-wrapper::after {
+	border-color: #F55E45 transparent transparent;
+}
+/* border-left-color */
+blockquote {
+	border-left: 3px solid #F55E45;
+}
+.attorney-address li {
+    border-left: 1px solid #F55E45;
+}
+.section-title.title-border {
+	border-left: 4px solid #003974;
+}
+/* border-top-color */
+.menuzord.red .menuzord-menu > li.active > a,
+.menuzord.red .menuzord-menu > li:hover > a {
+	border-top-color: #f55e45;
+}
+.member-info {
+	border-top: 3px outset #F55E45;
+}
+.cssload-tri {
+	border-top: 27px solid #f55e45;
+}
+/* border-right-color */
+.border-right-red {
+	border-right: 1px solid #f55e45;
+}
+.section-title.title-border.title-right {
+    border-right: 4px solid #003974;
+}
+/* border-bottom-color */
+.border-bottom {
+	border-bottom: 1px solid #f55e45;
+}
+.cssload-tri.cssload-invert {
+	border-bottom: 27px solid #f55e45;
+}
+/* box-shadow */
