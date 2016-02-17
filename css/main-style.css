@@ -164,8 +164,8 @@ h6 {
 	margin-bottom: 5px;
 }
 p {
-	color: #585858;
-	font-size: 13px;
+	color: #fff;
+	font-size: 16px;
 	line-height: 1.8;
 	margin-bottom: 5px;
 }
@@ -635,6 +635,9 @@ textblock {
 .text-red {
 	color: #F55E45 !important;
 }
+.text-white {
+	color: #fff !important;
+}
 /* bg color */
 .bg-red {
 	background-color: #f55e45 !important;
@@ -719,6 +722,12 @@ button.bg-red {
 }
 .layer-overlay.overlay-green-light::before {
 	background-color: rgba(16,196,92,0.45);
+}
+#about{
+	text-align: justify;
+}
+#about h3{
+	color: #fff:
 }
 /*
  * 2.0 -> Preloader
@@ -1162,6 +1171,7 @@ button.bg-red {
 }
 .panel-group .panel-content>:last-child {
 	margin-bottom: 0;
+	color: #111;
 }
 /* Toggle */
 .panel-group.toggle .panel-heading {

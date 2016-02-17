@@ -122,6 +122,7 @@ blockquote.style2 {
 }
 .text-black {
 	color: #333 !important;
+	font-size: 13px;
 }
 .text-black-light {
 	color: #888 !important;

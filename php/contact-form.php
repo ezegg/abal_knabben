@@ -10,9 +10,10 @@ function IsNullOrEmptyString($str) {
     return (!isset($str) || trim($str)==='');
 }
 
-$to = 'spam@thememascot.com';	// Recipient's email address
-$subject = 'Contact Subject'; 	// Email subject	
-					
+//$to = 'abal@abk.adv.br';	// Recipient's email address
+$to = 'ezequiel.garcia@plyom.com';
+$subject = 'Test'; 	// Email subject
+
 $name = customValidation($_REQUEST['contact_name']);				// Sender's name
 $email = customValidation($_REQUEST['contact_email']);			// Sender's email address
 $message = customValidation($_REQUEST['contact_message']);	// Contact form message
@@ -33,7 +34,7 @@ if (IsNullOrEmptyString($name)) {
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= "Reply-to: ".$email."\r\n";
 	$headers .= "From: ". $name ." <" . $email . ">\r\n"; // Sender's email address
-	
+
 	mail($to, $subject, $message, $headers);
 	// Transfer the value 'sent' to ajax function for showing success message.
 	echo 'sent';
