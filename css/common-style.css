@@ -587,7 +587,6 @@ section > .container, section > .container-fluid {
 }
 /* Divider Common Css */
 .divider, .parallax {
-	background-image: url(../images/bg/bg1.jpg); /* default image */
 	background-repeat: repeat;
 	background-position: center center;
 	-webkit-background-size: cover;

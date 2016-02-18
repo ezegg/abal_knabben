@@ -729,6 +729,9 @@ button.bg-red {
 #about h3{
 	color: #fff:
 }
+#logoTweo{
+	display: none;
+}
 /*
  * 2.0 -> Preloader
  * -----------------------------------------------
@@ -965,7 +968,6 @@ button.bg-red {
   color: #f55e45;
 }
 .menuzord-brand img {
-	max-height: 38px;
 }
 /*
  * 3.2  -> nav sidebar

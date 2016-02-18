@@ -156,14 +156,22 @@
     function thememascot_topnav_animate() {
       if ($(window).scrollTop() > (50)) {
             $(".navbar-sticky-animated").removeClass("animated-active");
+            $("#logoTwo").show();
+            $("#logoOne").hide();
         } else {
             $(".navbar-sticky-animated").addClass("animated-active");
+            $("#logoTwo").hide();
+            $("#logoOne").show();
         }
 
         if ($(window).scrollTop() > (50)) {
             $(".navbar-sticky-animated .header-nav-wrapper .container").removeClass("pt-10").removeClass("pb-10");
+            $("#logoTwo").show();
+            $("#logoOne").hide();
         } else {
             $(".navbar-sticky-animated .header-nav-wrapper .container").addClass("pt-10").addClass("pb-10");
+            $("#logoTwo").hide();
+            $("#logoOne").show();
         }
     }
 
