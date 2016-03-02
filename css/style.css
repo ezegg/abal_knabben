@@ -1,5 +1,5 @@
 /*
-@Author: ThemeMascot
+@Author: Ezequiel-Plyom
 @URL: http://ThemeMascot.com
 
 This is the file where you can add your custom styles to change the look of the
@@ -8,3 +8,7 @@ theme. But don't modify main-style.css file.
 */
 
 /* Your custom css codes start here: */
+
+.heigth-box {
+	height: 197px !important;
+}
