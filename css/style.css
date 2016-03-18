@@ -12,7 +12,9 @@ theme. But don't modify main-style.css file.
 .heigth-box {
 	height: 197px !important;
 }
-
+#titleMain {
+	font-size: 30px !important;
+}
 @media (max-width: 480px) {
 	#titleMain, #imageLogo {
 		text-align: center !important;
