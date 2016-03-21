@@ -13,10 +13,14 @@ theme. But don't modify main-style.css file.
 	height: 197px !important;
 }
 #titleMain {
-	font-size: 30px !important;
+	font-size: 36px !important;
 }
-@media (max-width: 480px) {
+@media (max-width: 800px) {
 	#titleMain, #imageLogo {
 		text-align: center !important;
+	}
+	#imageLogo {
+		position: relative !important;
+    top: 30px !important;
 	}
 }
